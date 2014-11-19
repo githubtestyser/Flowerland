@@ -1,0 +1,123 @@
+﻿1)Flower:
+
+  FlowerID;
+
+  FlowerName;
+
+  Price;
+
+  History;
+
+  Image;
+
+ 
+
+2)Specie:
+
+  SpecieID;
+
+  SpecieName;
+
+ 
+
+3)Bouquet:
+
+  BouquetID;
+
+  Price;
+
+  Description;
+
+  Image;
+
+ 
+
+4)Category:
+
+  CategoryID;
+
+  CategoryName;
+
+ 
+
+5)Employee:
+
+  EmployeeID;
+
+  FirstName;
+
+  LastName;
+
+  PrivateNumber;
+
+  Phone;
+
+  Email;
+
+  EmployeeType;
+
+ 
+
+7)Client:
+
+  ClientID;
+
+  FirstName;
+
+  LastName;
+
+  PrivateNumber;
+
+  Phone;
+
+  Email;
+
+ 
+
+8)Order:
+
+  OrderID;
+
+  OrderDate;
+
+  Bouquet;
+
+  Price;
+
+  Client;
+
+  Employee;
+
+ 
+
+//davamatot OrderDetails
+
+//aseve davamatot atributebis klasi, romelic mibuli wiqneba buketebze vda agnishnavs konkteruli damatebiti nivtisa da momsaxurebis fass
+
+ 
+
+//davamatot gamokitxvis moduli.
+
+//davamatot mtavar gverdze sareklamo banneris martvis moduli (am etapze gavtvalot mxolod klasebi)
+
+//davamatot logika specialuri shetavazebebis blokebbis asawyobad (asetive klasebit)
+
+ 
+
+//davamatot momxmareblis kalata
+
+ 
+
+(yvavilsa da saxeobas shoris bevri-erttan kavshiri;
+
+yvavilsa da taiguls shoris bevri-bevrtan kavshiri;
+
+taigulsa da kategorias shoris bevri-bevrtan kavshiri
+
+taigulsa da orders shoris bevri-bevrtan kavshiri
+
+klientsa da orders shoris erti-bevrtan kavshiri
+
+tanamshromelsa da orders shoris erti-bevrtan kavshiri
+
+tanamshromlis tipsa da tanamshromels shoris erti-bevrtan kavshiri)
