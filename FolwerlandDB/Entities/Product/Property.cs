@@ -5,18 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FolwerLandBase
+namespace FolwerlandDB.Entities.Product
 {
-    public class CustomerType
+    class Property
     {
-        public CustomerType()
-        {
-            Customer = new List<Customer>();
-        }
         [Key]
+        [Required]
         public int ID { get; set; }
+        public string Name { get; set; }
         public string Type { get; set; }
-        public string Description { get; set; }
-        public virtual ICollection<Customer> Customer { get; set; }
     }
 }

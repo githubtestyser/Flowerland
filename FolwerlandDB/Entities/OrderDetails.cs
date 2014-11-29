@@ -10,13 +10,6 @@ namespace FolwerLandBase
 {
     public class OrderDetails //NorthWind-is Magalitze Shevqmeni
     {
-        //public OrderDetails()
-        //{
-        //    if (Discount > 1 || Discount <= 0)
-        //    {
-        //        Discount = 1;
-        //    }
-        //}
 
         [Key]
         public int OrderDetailID { get; set; }
@@ -31,12 +24,6 @@ namespace FolwerLandBase
         public decimal Discount { get; set; }
 
         [Required]
-        public BouqetAttributes Attributes { get; set; }
-
-
-        [Required]
         public Order Order { get; set; }
-        public Bouqet Bouquet { get; set; }
-        public Flower Flowers { get; set; }
     }
 }

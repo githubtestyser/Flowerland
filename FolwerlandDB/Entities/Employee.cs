@@ -10,32 +10,7 @@ namespace FolwerLandBase {
         {
             EmployeeTypes = new List<EmployeType>();
         }
-        //public Employee() {
-        //    Orders = new List<Order>();
-        //    //if(Job != JobType.Programmer) {
-        //    //	Adds = null;
-        //    //}
-        //}
 
-		//[Key]
-		//public int EmployeeID { get; set; }
-
-		//public PersonalProperties PersonalProperties { get; set; }
-
-		//public ContactInfo ContactInfo { get; set; }
-
-		//public JobType Job { get; set; }
-
-		//public virtual ICollection<Order> Orders { get; set; }
-		//public virtual ICollection<AddsBanner> Adds { get; set; }
         public virtual ICollection<EmployeType> EmployeeTypes { get; set; }
-	}
-
-	//public enum JobType {
-	//	DeliveriesMan,
-	//	Programmer,
-	//	Manager
-    //    //Tornike
-	//}
-    
+	}    
 }

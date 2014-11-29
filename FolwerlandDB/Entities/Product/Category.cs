@@ -4,16 +4,16 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
-namespace FolwerLandBase
+namespace FolwerlandDB.Entities.Product
 {
   public class Category
     {
         [Key]
         [Required]
-        public int CategoryID { get; set; }
-        [MaxLength(20)]
-        public string CategoryName { get; set; }
+        public int ID { get; set; }
 
-        public virtual ICollection<Bouqet> Bouqets { get; set; }
+        public string Name { get; set; }
+
+        IEnumerable<ProductTmplate> Products { get; set; }
     }
 }
