@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FolwerlandDB.Entities.Product
+namespace FlowerlandDB
 {
     class ProductProperty
     {

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
-namespace FolwerlandDB.Entities.Product
+namespace FlowerlandDB
 {
   public class Category
     {
@@ -14,6 +14,6 @@ namespace FolwerlandDB.Entities.Product
 
         public string Name { get; set; }
 
-        IEnumerable<ProductTmplate> Products { get; set; }
+        IEnumerable<ProductTemplate> Products { get; set; }
     }
 }

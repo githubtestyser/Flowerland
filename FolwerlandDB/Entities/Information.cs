@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FolwerLandBase {
+namespace FlowerlandDB {
 	[ComplexType]
 	public class AddressInfo {
 		[MaxLength(20), MinLength(4)]
@@ -36,11 +36,11 @@ namespace FolwerLandBase {
 	public class PersonalProperties {
 		public PersonalProperties() {
 			if(Age > 120 || Age < 17) {
-				Status = Status.DeadOrInactive;
+				Status = Status.Inactive;
 			} else if(Gender == Gender.NotSpecified) {
-				Status = Status.DeadOrInactive;
+				Status = Status.Inactive;
 			} else if(CreditCardNumber == String.Empty) {
-				Status = Status.DeadOrInactive;
+				Status = Status.Inactive;
 			} else {
 				Status = Status.Active;
 			}
@@ -70,7 +70,7 @@ namespace FolwerLandBase {
 		[DefaultValue(Gender.NotSpecified)]
 		public Gender Gender { get; set; }
 
-		[DefaultValue(Status.DeadOrInactive)]
+		[DefaultValue(Status.Inactive)]
 		public Status Status { get; set; }
 	}
 
@@ -81,7 +81,7 @@ namespace FolwerLandBase {
 	}
 
 	public enum Status {
-		DeadOrInactive = -1,
+		Inactive = -1,
 		Resigned = 0,
 		Active = 1
 	}

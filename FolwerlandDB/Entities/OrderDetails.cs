@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FolwerLandBase
+namespace FlowerlandDB
 {
     public class OrderDetails //NorthWind-is Magalitze Shevqmeni
     {

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
-namespace FolwerLandBase {
+namespace FlowerlandDB {
 	public class Order {
 		public Order() {
 			DateOfOrder = DateTime.Now;
